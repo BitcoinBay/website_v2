@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
+import Logo from 'components/logo';
+import LogoDark from 'assets/logo.svg';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
@@ -57,6 +59,7 @@ const MobileDrawer = () => {
       closeBtnStyle={styles.close}
     >
       <Scrollbars autoHide>
+        <Logo src={LogoDark} />
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (

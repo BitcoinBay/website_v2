@@ -1,21 +1,36 @@
+import React, { useState } from 'react';
 /** @jsx jsx */
-import { jsx, Container, Box } from 'theme-ui';
+import { 
+  jsx, 
+  Container, 
+  Box, 
+  Button 
+} from 'theme-ui';
+import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
+import ModalVideo from 'react-modal-video';
+import { IoIosPlay } from 'react-icons/io';
 import Image from 'components/image';
 
 import FeatureThumb from 'assets/core-feature.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'BlockHack Global',
+  title: 'BlockHack Global helps teams build blockchain projects',
   description:
     'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
-  btnURL: '#',
+  btnName: 'Learn More',
+  btnURL: 'http://www.blockhack.ca/',
 };
 
 export default function CoreFeature() {
+  // modal popup video handler
+  const [videoOpen, setVideoOpen] = useState(false);
+  const handleClick = (e) => {
+    e.preventDefault();
+    setVideoOpen(true);
+  };
   return (
     <section sx={{ variant: 'section.coreFeature' }}>
       <Container sx={styles.containerBox}>
@@ -30,14 +45,42 @@ export default function CoreFeature() {
         </Box>
         <Box sx={styles.thumbnail}>
           <Image src={FeatureThumb} alt="Thumbnail" />
+          <Button
+            sx={styles.videoBtn}
+            onClick={handleClick}
+            aria-label="Play Button"
+          >
+            <span>
+              <IoIosPlay />
+            </span>
+          </Button>
+
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
           </Box>
         </Box>
       </Container>
+      <ModalVideo
+        channel="youtube"
+        isOpen={videoOpen}
+        videoId="6herGqWhyWQ"
+        onClose={() => setVideoOpen(false)}
+      />
     </section>
   );
 }
+
+const playPluse = keyframes`
+  from {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  to {
+	transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+`;
 
 const styles = {
   containerBox: {
@@ -75,5 +118,47 @@ const styles = {
     right: -165,
     zIndex: -1,
     display: ['none', 'inline-block', 'none', null, 'inline-block'],
+  },
+  videoBtn: {
+    zIndex: 2,
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: ['60px', null, '80px', null, '100px'],
+    height: ['60px', null, '80px', null, '100px'],
+    p: '0px !important',
+    backgroundColor: 'transparent',
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      left: '50%',
+      top: '50%',
+      transform: 'translateX(-50%) translateY(-50%)',
+      display: 'block',
+      width: ['60px', null, '80px', null, '100px'],
+      height: ['60px', null, '80px', null, '100px'],
+      backgroundColor: 'primary',
+      borderRadius: '50%',
+      animation: `${playPluse} 1.5s ease-out infinite`,
+      opacity: 0.5,
+    },
+    '> span': {
+      backgroundColor: 'rgba(255,255,255,0.5)',
+      width: 'inherit',
+      height: 'inherit',
+      textAlign: 'center',
+      borderRadius: '50%',
+      cursor: 'pointer',
+      transition: 'all 0.5s',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      position: 'relative',
+      zIndex: 2,
+    },
+    svg: {
+      fontSize: [40, null, 48, null, 62],
+    },
   },
 };
