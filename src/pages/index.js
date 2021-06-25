@@ -26,8 +26,8 @@ export default function IndexPage() {
           <AboutUs />
           <ServiceSection />
           <Feature />
+          {/* <WorkFlow /> */}
           <CoreFeature />
-          <WorkFlow />
           {/* <Package /> */}
           <TeamSection />
           <TestimonialCard />

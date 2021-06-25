@@ -1,23 +1,29 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Link } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+// import LogoDark from 'assets/logo.svg';
+import BitcoinBayLogo from 'assets/bitcoinbay_logo.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
+
+const data = {
+  btnURL: "https://www.meetup.com/The-Bitcoin-Bay/",
+  btnName: "Meetup Page"
+}
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={LogoDark} />
+          <Logo src={BitcoinBayLogo} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -27,17 +33,23 @@ export default function Header({ className }) {
                 key={i}
               >
                 {label}
-              </Link>
+              </ScrollLink>
             ))}
           </Flex>
 
-          <Button
+          {/* <Button
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
           >
             Get Started
-          </Button>
+          </Button> */}
+
+          <Link href={data.btnURL} variant="default">
+            <Button variant="primary" aria-label={data.btnName}>
+              {data.btnName}
+            </Button>
+          </Link>
 
           <MobileDrawer />
         </Container>

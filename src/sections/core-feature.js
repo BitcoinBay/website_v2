@@ -12,14 +12,14 @@ import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 import Image from 'components/image';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/blockhack.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
   subTitle: 'BlockHack Global',
   title: 'BlockHack Global helps teams build blockchain projects',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
+    'BlockHack is a week-long hackathon that combines entrepreneurship and blockchain technology. We invite teams to build innovative blockchain applications for financial freedom and end-user control.',
   btnName: 'Learn More',
   btnURL: 'http://www.blockhack.ca/',
 };
@@ -63,7 +63,7 @@ export default function CoreFeature() {
       <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-        videoId="6herGqWhyWQ"
+        videoId="mwky9iYTVlg"
         onClose={() => setVideoOpen(false)}
       />
     </section>

@@ -3,178 +3,178 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-import Member1 from 'assets/team/member-1.png';
-import Member2 from 'assets/team/member-2.png';
-import Member3 from 'assets/team/member-3.png';
-import Member4 from 'assets/team/member-4.png';
-import Member5 from 'assets/team/member-5.png';
+import Leo from 'assets/team/Leo.png';
+import Jerry from 'assets/team/Jerry.png';
+import Antoine from 'assets/team/Antoine.png';
+import Gaurav from 'assets/team/Gaurav.png';
+import Allwyn from 'assets/team/Allwyn.png';
 import Member6 from 'assets/team/member-6.png';
 
 const data = [
   {
     id: 1,
-    imgSrc: Member1,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    imgSrc: Leo,
+    altText: 'Leo Fiadzinu',
+    title: 'Leo Fiadzinu',
+    designation: 'CEO',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/leonard-fiadzinu-cfa-cmt-caia-a43a1a1/',
+        icon: <FaLinkedin />,
       },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
     ],
   },
   {
     id: 2,
-    imgSrc: Member2,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Founder',
+    imgSrc: Jerry,
+    altText: 'Jerry Qian',
+    title: 'Jerry Qian',
+    designation: 'Core Operations',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/jerry-qian-4ba2a79a/',
+        icon: <FaLinkedin />,
       },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
     ],
   },
   {
     id: 3,
-    imgSrc: Member3,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    imgSrc: Antoine,
+    altText: 'Antoine de Vuyst',
+    title: 'Antoine de Vuyst',
+    designation: 'Blockchain Development',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/antoine-de-vuyst-49a74194/',
+        icon: <FaLinkedin />,
       },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
     ],
   },
   {
     id: 4,
-    imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
-    designation: 'Web Developer',
+    imgSrc: Gaurav,
+    altText: 'Gaurav Sharma',
+    title: 'Gaurav Sharma',
+    designation: 'Business Development',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/gauravksharma9/',
+        icon: <FaLinkedin />,
       },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
     ],
   },
   {
     id: 5,
-    imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    imgSrc: Allwyn,
+    altText: "Allwyn d'Souza",
+    title: "Allwyn d'Souza",
+    designation: 'Business Development',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/company/bitcoinbay',
+        icon: <FaLinkedin />,
       },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
     ],
   },
-  {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   imgSrc: Member6,
+  //   altText: 'Aaron Nunez',
+  //   title: 'Aaron Nunez',
+  //   designation: 'Web Designer',
+  //   socialProfile: [
+  //     {
+  //       id: 1,
+  //       name: 'linkedin',
+  //       path: '#',
+  //       icon: <FaLinkedin />,
+  //     },
+  //     // {
+  //     //   id: 2,
+  //     //   name: 'twitter',
+  //     //   path: '#',
+  //     //   icon: <FaTwitter />,
+  //     // },
+  //     // {
+  //     //   id: 3,
+  //     //   name: 'instagram',
+  //     //   path: '#',
+  //     //   icon: <FaInstagram />,
+  //     // },
+  //   ],
+  // },
 ];
 
 export default function TeamSection() {
