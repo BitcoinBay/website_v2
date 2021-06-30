@@ -28,18 +28,18 @@ const data = {
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Engaging Conversations',
+      title: 'Engaging Conversations',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Regularly hosted community meetups, featuring introductory content, latest development and new projects.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Friendly Networking',
+      title: 'Friendly Networking',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Growing a robust grassroots group of beginners, experts, entrepreneurs andinvestors in the blockchain ecosystem.',
     },
   ],
 };
