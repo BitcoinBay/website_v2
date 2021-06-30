@@ -8,11 +8,11 @@ export default [
     label: 'About Us',
   },
   {
-    path: 'team',
-    label: 'Team',
+    path: 'blockhack',
+    label: 'BlockHack',
   },
   {
-    path: 'testimonial',
-    label: 'Testimonial',
+    path: 'team',
+    label: 'Team',
   },
 ];

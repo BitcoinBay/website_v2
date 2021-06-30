@@ -30,7 +30,7 @@ export default function IndexPage() {
           <CoreFeature />
           {/* <Package /> */}
           <TeamSection />
-          <TestimonialCard />
+          {/* <TestimonialCard /> */}
           {/* <BlogSection /> */}
           {/* <Subscribe /> */}
         </Layout>

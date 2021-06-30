@@ -32,7 +32,7 @@ export default function CoreFeature() {
     setVideoOpen(true);
   };
   return (
-    <section sx={{ variant: 'section.coreFeature' }}>
+    <section id="blockhack" sx={{ variant: 'section.coreFeature' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature

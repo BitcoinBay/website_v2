@@ -10,7 +10,7 @@ import Jerry from 'assets/team/Jerry.png';
 import Antoine from 'assets/team/Antoine.png';
 import Gaurav from 'assets/team/Gaurav.png';
 import Allwyn from 'assets/team/Allwyn.png';
-import Member6 from 'assets/team/member-6.png';
+import Juan from 'assets/team/Juan.jpg';
 
 const data = [
   {
@@ -148,33 +148,33 @@ const data = [
       // },
     ],
   },
-  // {
-  //   id: 6,
-  //   imgSrc: Member6,
-  //   altText: 'Aaron Nunez',
-  //   title: 'Aaron Nunez',
-  //   designation: 'Web Designer',
-  //   socialProfile: [
-  //     {
-  //       id: 1,
-  //       name: 'linkedin',
-  //       path: '#',
-  //       icon: <FaLinkedin />,
-  //     },
-  //     // {
-  //     //   id: 2,
-  //     //   name: 'twitter',
-  //     //   path: '#',
-  //     //   icon: <FaTwitter />,
-  //     // },
-  //     // {
-  //     //   id: 3,
-  //     //   name: 'instagram',
-  //     //   path: '#',
-  //     //   icon: <FaInstagram />,
-  //     // },
-  //   ],
-  // },
+  {
+    id: 6,
+    imgSrc: Juan,
+    altText: 'Juan Montoya',
+    title: 'Juan Montoya',
+    designation: 'Design & Strategy',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/jmport/',
+        icon: <FaLinkedin />,
+      },
+      // {
+      //   id: 2,
+      //   name: 'twitter',
+      //   path: '#',
+      //   icon: <FaTwitter />,
+      // },
+      // {
+      //   id: 3,
+      //   name: 'instagram',
+      //   path: '#',
+      //   icon: <FaInstagram />,
+      // },
+    ],
+  },
 ];
 
 export default function TeamSection() {

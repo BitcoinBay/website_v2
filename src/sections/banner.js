@@ -16,7 +16,7 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Created in 2014, Bitcoin Bay is one of the oldest blockchain organizations in Toronto. We guide people through the cryptocurrency markets, and provide B2B blockchain expertise for organizations seeking to utilize the technology.
           </Text>
-          <Button variant="primary">Contact Us</Button>
+          {/* <Button variant="primary">Contact Us</Button> */}
           <Text as="p" variant="heroSecondary">
             Reach out to us at info@bitcoinbay.ca
           </Text>
