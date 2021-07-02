@@ -1,4 +1,4 @@
-/** @jsx jsx */
+ 
 import { jsx, Container, Box, Flex } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import React, { useState } from 'react';

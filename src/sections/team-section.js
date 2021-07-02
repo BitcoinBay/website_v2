@@ -1,4 +1,4 @@
-/** @jsx jsx */
+ 
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';

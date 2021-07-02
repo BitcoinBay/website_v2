@@ -1,4 +1,4 @@
-/** @jsx jsx */
+ 
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from 'assets/meetup.png';

@@ -1,4 +1,4 @@
-/** @jsx jsx */
+ 
 import { jsx, Box, Heading, Text, Button, Link } from 'theme-ui';
 
 export default function TextFeature({
